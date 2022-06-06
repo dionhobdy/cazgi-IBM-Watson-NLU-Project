@@ -71,7 +71,8 @@ app.get("/url/emotion", (req,res) => {
 //The endpoint for the webserver ending with /url/sentiment
 app.get("/url/sentiment", (req,res) => {
     let urlToAnalyze = req.query.url
-    const analyzeParams = {
+    const analyzeParams = 
+    {
         "url": urlToAnalyze,
         "features": {
             "keywords": {
@@ -97,7 +98,8 @@ app.get("/url/sentiment", (req,res) => {
 //The endpoint for the webserver ending with /text/emotion
 app.get("/text/emotion", (req,res) => {
     let textToAnalyze = req.query.text
-    const analyzeParams = {
+    const analyzeParams = 
+    {
         "text": textToAnalyze,
         "features": {
             "keywords": {
@@ -122,7 +124,8 @@ app.get("/text/emotion", (req,res) => {
 
 app.get("/text/sentiment", (req,res) => {
     let textToAnalyze = req.query.text
-    const analyzeParams = {
+    const analyzeParams = 
+    {
         "text": textToAnalyze,
         "features": {
             "keywords": {
